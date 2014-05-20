@@ -1,0 +1,53 @@
+// General styles, e. g. for the body tag
+@import 'variables';
+@import 'elements';
+
+/* -------------------
+    Main Content
+   ------------------- */
+
+body {padding-top: 60px;}
+#login-buttons a {text-decoration:none;}
+
+a {
+    color: inherit;
+    transition: 0.3s color;
+
+    &:hover {
+        color: @primaryLinkHoverColor;
+    }
+}
+
+.icon {
+    &.orange {
+        color: @html5Orange;
+    }
+}
+
+.ui.header {
+    font-family: 'Glegoo', serif;
+}
+
+/* -------------------
+    Footer
+   ------------------- */
+.padding-wrapper.footer {
+    border-radius: 0px;
+
+    a:hover {
+        color: @secondaryLinkHoverColor;
+    }
+}
+
+/* -------------------
+    Progress bar
+   ------------------- */
+
+#iron-router-progress {
+    background-color : #988aac;
+    box-shadow       : 0 0 5px #884fbf;
+}
+
+#iron-router-progress.spinner:before {
+    border-color : #dfdfdf;
+}
