@@ -5,7 +5,13 @@ var ContactController = RouteController.extend({
 Router.map(function () {
     this.route('contact', {
         path :  '/contact',
-        controller :  ContactController
+        controller :  ContactController,
+		waitOn: function() {
+		    return Meteor.subscribe('voltagePages');
+		},
+		action: function() {
+		    Voltage.render(this);
+		}        
     });
 });
 
