@@ -5,13 +5,7 @@ var AboutController = RouteController.extend({
 Router.map(function () {
     this.route('about', {
         path :  '/about',
-        controller :  AboutController,
-		waitOn: function() {
-		    return Meteor.subscribe('voltagePages');
-		},
-		action: function() {
-		    Voltage.render(this);
-		}        
+        controller :  AboutController
     });
 });
 
