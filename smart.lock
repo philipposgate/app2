@@ -9,10 +9,10 @@
       "collection2": {},
       "bootstrap-3": {},
       "accounts-entry": {},
-      "accounts-ui-bootstrap-3": {},
       "roles": {},
       "accounts-admin-ui-bootstrap-3": {},
-      "voltage": {}
+      "voltage": {},
+      "fullcalendar-2": {}
     },
     "packages": {
       "iron-router": {
@@ -50,11 +50,6 @@
         "tag": "v0.7.3",
         "commit": "7facaa045d3720eeeba3420c28e48d5709188fe3"
       },
-      "accounts-ui-bootstrap-3": {
-        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.0-1",
-        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
-      },
       "roles": {
         "git": "https://github.com/alanning/meteor-roles.git",
         "tag": "v1.2.9",
@@ -69,6 +64,11 @@
         "git": "https://github.com/Differential/meteor-voltage.git",
         "tag": "v0.1.3",
         "commit": "8e40babeb544948af729818dc3c2b3d1124a90f9"
+      },
+      "fullcalendar-2": {
+        "git": "https://github.com/scmart/meteor-fullcalendar-2.git",
+        "tag": "v2.0.1",
+        "commit": "d00e310b5bd3902e8a010e14fb6e1ae91bd74340"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
@@ -99,6 +99,11 @@
         "git": "https://github.com/stuartfenton/meteor-ace-embed.git",
         "tag": "v0.0.4",
         "commit": "027b0e1b0d06111b51a713f04a8b8750fdcbd289"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "underscore-string-latest": {
         "git": "https://github.com/TimHeckel/meteor-underscore-string.git",

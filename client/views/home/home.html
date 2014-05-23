@@ -1,13 +1,17 @@
 <template name="home">
     <p>Template home</p>
     
-	{{#if currentUser}}
-		{{#if isAdminUser}}
-			i am an admin user.
+    <div class="alert alert-success">
+		{{#if currentUser}}
+			{{#if isAdminUser}}
+				i am an admin user.
+			{{else}}
+				i am a regular user.
+			{{/if}}    
 		{{else}}
-			i am a regular user.
+			i am not logged in.
 		{{/if}}    
-	{{/if}}    
-
+    </div>
+	
 </template>
 

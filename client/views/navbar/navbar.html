@@ -15,18 +15,16 @@
             <li class="{{ activeIfTemplateIs 'home' }}"><a href="{{ pathFor 'home' }}">Home</a></li>
             <li class="{{ activeIfTemplateIs 'about' }}"><a href="{{ pathFor 'about' }}">About</a></li>
             <li class="{{ activeIfTemplateIs 'contact' }}"><a href="{{ pathFor 'contact' }}">Contact</a></li>
+            <li class="{{ activeIfTemplateIs 'calendar' }}"><a href="{{ pathFor 'calendar' }}">Calendar</a></li>            
             {{#if isAdminUser}}
 	            <li class="{{ activeIfTemplateIs 'accountsAdmin' }}"><a href="{{ pathFor 'accountsAdmin' }}">Accounts Admin</a></li>
             {{/if}}
           </ul>
-			<ul class="nav navbar-nav navbar-right">
-            	{{> loginButtons }}
-            </ul>          
           <ul class="nav navbar-nav pull-right">
             {{#if currentUser}}
-            	<li class="{{ activeIfTemplateIs 'sign-out' }}"><a href="/sign-out">Sign Out</a></li>
+            	<li class="{{ activeIfTemplateIs 'entrySignOut' }}"><a href="{{ pathFor 'entrySignOut' }}">Sign Out</a></li>
             {{else}}
-            	<li class="{{ activeIfTemplateIs 'sign-in' }}"><a href="/sign-in">Sign In</a></li>
+            	<li class="{{ activeIfTemplateIs 'entrySignIn' }}"><a href="{{ pathFor 'entrySignIn' }}">Sign In</a></li>
             {{/if}}
           </ul>
         </div><!--/.nav-collapse -->
