@@ -1,8 +1,42 @@
 <template name="calendar">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div id="cal"></div>
+			<div id="calendar"></div>
 		</div>
 	</div>
+	
+	<!-- ******* QTIP CONTENT ******* -->
+	<div style="display:none;">
+		<div class="editTipContent">
+			<form>
+				<table>
+					<tr>
+						<td>When</td>
+						<td class="editTipWhen"></td>
+					</tr>
+					<tr>
+						<td>What</td>
+						<td>
+							<input class="editTipWhat" name="title" type="text">
+							<div class="editTipWhatExample">e.g., 7pm Dinner at Pancho's</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Calendar</td>
+						<td class="editTipCalendar">
+							<select name="calendarId">
+								<c:forEach var="calList" items="${calLists}">
+									<c:forEach var="c" items="${calList.calendars}">
+										<option value="${c.id}">${c.title}</option>
+									</c:forEach>
+								</c:forEach>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<a href="javascript:void(0)" class="btn btn-small btn-inverse createEventBtn">Create Event</a>
+		</div>
+	</div>	
 </template>
 

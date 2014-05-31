@@ -12,7 +12,8 @@
       "roles": {},
       "accounts-admin-ui-bootstrap-3": {},
       "voltage": {},
-      "fullcalendar-2": {}
+      "fullcalendar-2": {},
+      "autoform": {}
     },
     "packages": {
       "iron-router": {
@@ -27,8 +28,8 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.3.1",
-        "commit": "3f7900feb4bb70a1289b39a1fdcd1f438c0335b3"
+        "tag": "v0.4.0",
+        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
       },
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
@@ -69,6 +70,11 @@
         "git": "https://github.com/scmart/meteor-fullcalendar-2.git",
         "tag": "v2.0.1",
         "commit": "d00e310b5bd3902e8a010e14fb6e1ae91bd74340"
+      },
+      "autoform": {
+        "git": "https://github.com/aldeed/meteor-autoform.git",
+        "tag": "v0.9.0",
+        "commit": "0841eb4ed0f7dd9801d9c234921647609cad44ba"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
