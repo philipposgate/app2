@@ -116,8 +116,7 @@ Template['calendar'].rendered = function() {
 	var d = initdate.getDate();
 	var m = initdate.getMonth();
 	var y = initdate.getFullYear();
-	
-	
+
 	this.$("#calendar").fullCalendar({header: {
 				left: 'prev,next today',
 				center: 'title',
@@ -201,7 +200,7 @@ Template['calendar'].rendered = function() {
 					id: 999,
 					title: 'Repeating Event',
 					start: new Date(y, m, d+4, 16, 0),
-					allDay: false
+					allDay: true
 				},
 				{
 					title: 'Meeting',
