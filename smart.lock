@@ -74,8 +74,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.10.0",
-        "commit": "4b298a025679a7e51892a884c11301c1d6bf19b3"
+        "tag": "v0.11.0",
+        "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
       },
       "user-status": {
         "git": "https://github.com/mizzao/meteor-user-status.git",
