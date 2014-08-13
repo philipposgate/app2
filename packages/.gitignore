@@ -34,3 +34,7 @@ iron-router-progress
 /autoform
 /user-status
 /timesync
+/iron-layout
+/simple-form
+/iron-core
+/iron-dynamic-template
