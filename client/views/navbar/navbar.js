@@ -8,3 +8,9 @@ Template['navbar'].helpers({
 Template['navbar'].events({
 });
 
+Template['navbar'].rendered = function() {
+	var thisTemplate = this;
+	thisTemplate.$('.navbar-collapse').click('li', function() {
+	  thisTemplate.$('.navbar-collapse').collapse('hide');
+	});
+};
